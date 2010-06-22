@@ -1,0 +1,9 @@
+%h1 Listing <%= plural_name %>
+
+%table
+  %tr
+    %th Names
+  - @users.each do |singular_user|
+    %tr
+      %td= singular_user.name
+      %td= link_to 'Show', %= singular_user
