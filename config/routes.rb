@@ -1,4 +1,6 @@
 Allinwithus::Application.routes.draw do |map|
+  resources :teams
+
   resources :users
 
   # The priority is based upon order of creation:
