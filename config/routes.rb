@@ -1,4 +1,8 @@
 Allinwithus::Application.routes.draw do |map|
+  resources :locations
+
+  resources :events
+
   resources :teams
 
   resources :users

@@ -15,6 +15,8 @@ gem 'rails3-generators'
 gem 'will_paginate'
 gem 'mocha'
 gem 'haml_scaffold'
+gem 'devise'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
