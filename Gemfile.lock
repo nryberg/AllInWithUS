@@ -36,6 +36,8 @@ GEM
     builder (2.1.2)
     bundler (1.0.0.beta.1)
     cgi_multipart_eof_fix (2.5.0)
+    compass (0.10.3)
+      haml (>= 3.0.4)
     daemons (1.1.0)
     devise (1.1.1)
       bcrypt-ruby (~> 2.1.2)
@@ -117,6 +119,7 @@ PLATFORMS
 
 DEPENDENCIES
   bson_ext
+  compass (>= 0.10.3)
   devise
   haml
   haml_scaffold
