@@ -16,7 +16,6 @@ gem 'will_paginate'
 gem 'mocha'
 gem 'haml_scaffold'
 gem 'devise'
-gem 'compass', ">= 0.10.3"
 
 # Use unicorn as the web server
 # gem 'unicorn'

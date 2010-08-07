@@ -9,5 +9,5 @@
     = csrf_meta_tag
   %title All in with us
 %body.bp
-  .container
+  .prepend-5
     = yield

@@ -1,4 +1,4 @@
-MongoMapper.connection = Mongo::Connection.new('store', 27017)
+MongoMapper.connection = Mongo::Connection.new('192.168.0.100', 27017)
 MongoMapper.database = "AllInWithUs-#{Rails.env}"
 
 if defined?(PhusionPassenger)
