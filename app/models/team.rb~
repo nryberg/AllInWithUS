@@ -1,7 +1,5 @@
 class Team
   include MongoMapper::Document 
-  key :name, String
-
           
   timestamps!
   

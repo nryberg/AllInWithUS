@@ -1,0 +1,4 @@
+%h1= @team.name
+= link_to 'Edit', edit_teams_path(@team)
+\|
+= link_to 'Back', teams_path
