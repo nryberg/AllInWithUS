@@ -13,7 +13,8 @@ class LocationsController < ApplicationController
   # GET /locations/1
   # GET /locations/1.xml
   def show
-    @location = Location.first(params[:id])
+     p params[:id]
+    @location = Location.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -34,7 +35,7 @@ class LocationsController < ApplicationController
 
   # GET /locations/1/edit
   def edit
-    @location = Location.first(params[:id])
+     @location = Location.find(params[:id])
   end
 
   # POST /locations
@@ -59,7 +60,7 @@ class LocationsController < ApplicationController
     @location = Location.first(params[:id])
 
     respond_to do |format|
-      if @location.update(params[:location])
+      if @location.update_attributes(params[:location])
         format.html { redirect_to(@location, :notice => 'Location was successfully updated.') }
         format.xml  { head :ok }
       else
@@ -72,7 +73,7 @@ class LocationsController < ApplicationController
   # DELETE /locations/1
   # DELETE /locations/1.xml
   def destroy
-    @location = Location.first(params[:id])
+    @location = Location.find(params[:id])
     @location.destroy
 
     respond_to do |format|
